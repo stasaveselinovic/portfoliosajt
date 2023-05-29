@@ -1,0 +1,80 @@
+// Media
+@mixin desktop {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin mobilesmall {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+// Centering
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+
+// Btn Outline Color
+@mixin btnoutline($color) {
+  @content;
+  color: $color;
+  background-color: transparent;
+  border-right: 2px solid $color;
+  border-left: 2px solid $color;
+  font-weight: 600;
+  position: relative;
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: $color;
+    transition: all 0.2s linear;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+  &:hover {
+    &::before,
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// Text
+@mixin text {
+  font-size: 16px;
+  line-height: 1.38;
+  font-weight: 400;
+  @content;
+}
+
+// Title
+@mixin title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.38;
+  text-transform: uppercase;
+  @content;
+}

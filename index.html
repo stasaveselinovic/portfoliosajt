@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="portfolio, Stasa Veselinovic, web developer, programmer, designer"
+    />
+    <meta name="author" content="Stasa Veselinovic" />
+    <meta name="copyright" content="Portfolio Stasa Veselinovic 2023" />
+    <link rel="stylesheet" href="./sass/main1.css" />
+    <title>Portfolio Web Developer</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img src="./assets/images/logo.png" alt="logo" class="logo" />
+          <!-- mobile checkbox -->
+          <input id="menu-input" class="menu-input" type="checkbox" />
+          <!-- nav -->
+          <nav class="nav">
+            <!-- mobile close -->
+            <label for="menu-input" class="mobile-close">
+              <img src="./assets/icons/close.svg" alt="close" />
+            </label>
+            <a href="#about" class="nav__link">About me</a>
+            <a href="#services" class="nav__link">Services</a>
+            <a href="#skills" class="nav__link">Skills</a>
+            <a href="#projects" class="nav__link">Projects</a>
+            <a href="#contact" class="btn btn--rounded">Contact me</a>
+          </nav>
+          <!-- Mobile menu -->
+          <label for="menu-input" class="mobile-menu">
+            <img src="./assets/icons/menu.svg" alt="menu" />
+          </label>
+        </div>
+      </div>
+    </header>
+    <!-- Intro -->
+    <section class="intro">
+      <div class="intro__layer">
+        <div class="container">
+          <div class="intro__inner">
+            <h3 class="intro__text">Hi, I am</h3>
+            <h1 class="intro__title">Stasa Veselinovic</h1>
+            <p class="intro__subtitle">Web Developer & Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main -->
+    <main>
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <img
+              src="./assets/images/my-photo.png"
+              alt="my-photo"
+              class="about__photo"
+            />
+            <div class="about__content">
+              <h3 class="section-title section-title--about">About me</h3>
+              <p class="about__text">
+                My name is Stasa Veselinovic, I am first year student at ICT
+                Academy. I have been learning Front-End and Back-End
+                technologies for a year and this time was just enough for me to
+                make sure that this is my place in the industry. College
+                developed my design skills, which quickly turned into a new
+                hobby
+              </p>
+              <p class="about__text">
+                I am fluent in English (spoken and written) and intermediate
+                Spanish. Apart from designing and programming websites, my
+                passion is playing sports and reading books.
+              </p>
+              <p class="about__text about__text--last">
+                I also enjoy working on my health, by going to the gym and
+                eating healthy and caring and learning about nutrition and
+                weight lifting.
+              </p>
+              <button class="btn btn--outline-white">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="services-n-skills">
+        <div class="container">
+          <!-- Services -->
+          <section class="services" id="services">
+            <h3 class="section-title section-title--outline">Services</h3>
+            <p class="services__text">
+              As a web developer I will make sure to give you what you need for
+              your project. Be it a single page site or multi page site, my job
+              is to meet your needs and make sure that the project fits the
+              market.
+            </p>
+            <button class="btn btn--outline-black">Explore</button>
+            <div class="services__wrapper">
+              <div class="services__item">
+                <img
+                  src="./assets/icons/design.svg"
+                  alt="services icon"
+                  class="services__item__icon"
+                />
+                <h4 class="services__item__title">Web Design</h4>
+                <p class="services__item__text">
+                  Web design is what creates the overall look and feel when
+                  you're using a website. It's the process of planning and
+                  building the elements of your website, from structure and
+                  layout to images, colors, fonts and graphics.
+                </p>
+              </div>
+              <div class="services__item">
+                <img
+                  src="./assets/icons/development.svg"
+                  alt="services icon"
+                  class="services__item__icon"
+                />
+                <h4 class="services__item__title">Web development</h4>
+                <p class="services__item__text">
+                  Web development is a way to make people aware of the services
+                  and/or products you are offering, understand why your products
+                  are relevant and even necessary for them to buy or use, and
+                  see which of your company's qualities set it apart from
+                  competitors.
+                </p>
+              </div>
+              <div class="services__item">
+                <img
+                  src="./assets/icons/seo.svg"
+                  alt="services icon"
+                  class="services__item__icon"
+                />
+                <h4 class="services__item__title">SEO</h4>
+                <p class="services__item__text">
+                  SEO is the effort to have your website's pages shown at the
+                  top of search results. It involves creating website pages in a
+                  way that satisfies keywords typed into a search engine, so
+                  that users find what they're looking for on the internet.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Skills -->
+          <section class="skills" id="skills">
+            <h3 class="section-title section-title--outline">Skills</h3>
+            <div class="skills__wrapper">
+              <div class="skills__item">
+                <div class="skills__item__header">
+                  <h3>html</h3>
+                  <h3>95%</h3>
+                </div>
+                <div class="skills__item__bar">
+                  <div
+                    class="skills__item__bar__inner"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__item__header">
+                  <h3>css</h3>
+                  <h3>80%</h3>
+                </div>
+                <div class="skills__item__bar">
+                  <div
+                    class="skills__item__bar__inner"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__item__header">
+                  <h3>sass</h3>
+                  <h3>75%</h3>
+                </div>
+                <div class="skills__item__bar">
+                  <div
+                    class="skills__item__bar__inner"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__item__header">
+                  <h3>JavaScript</h3>
+                  <h3>90%</h3>
+                </div>
+                <div class="skills__item__bar">
+                  <div
+                    class="skills__item__bar__inner"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__item__header">
+                  <h3>sql</h3>
+                  <h3>90%</h3>
+                </div>
+                <div class="skills__item__bar">
+                  <div
+                    class="skills__item__bar__inner"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__item__header">
+                  <h3>git</h3>
+                  <h3>70%</h3>
+                </div>
+                <div class="skills__item__bar">
+                  <div
+                    class="skills__item__bar__inner"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <div class="container-large">
+          <div class="projects__inner">
+            <h3 class="section-title section-title--about">Projects</h3>
+            <div class="projects__wrapper">
+              <div class="projects__item">
+                <img
+                  src="./assets/images/project-1.jpg"
+                  alt="project"
+                  class="projects__item__photo"
+                />
+                <div class="projects__item__content">
+                  <h3 class="projects__item__title">ArchiCapture</h3>
+                  <p class="projects__item__desc">
+                    3D photography - technologies: HTML, CSS, JavaScript
+                  </p>
+                  <a
+                    href="https://www.archicapture.online/"
+                    class="btn btn--outline-white"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+              <div class="projects__item">
+                <img
+                  src="./assets/images/project-2.jpg"
+                  alt="project"
+                  class="projects__item__photo"
+                />
+                <div class="projects__item__content">
+                  <h3 class="projects__item__title">Portfolio</h3>
+                  <p class="projects__item__desc">
+                    Personal portfolio - technologies: HTML, SASS
+                  </p>
+                  <a href="#" class="btn btn--outline-white">Demo</a>
+                </div>
+              </div>
+              <div class="projects__item">
+                <img
+                  src="./assets/images/project-3.jpg"
+                  alt="project"
+                  class="projects__item__photo"
+                />
+                <div class="projects__item__content">
+                  <h3 class="projects__item__title">Coming Soon</h3>
+                  <p class="projects__item__desc">
+                    This project in progress...
+                  </p>
+                  <a href="" class="btn btn--outline-white">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__inner">
+            <h3 class="section-title section-title--outline">Contact</h3>
+            <p class="contact__text">
+              I'm always open to discussing product design work or partnerships.
+              Feel free to contact me whenever you want.
+            </p>
+            <form class="contact__form">
+              <input type="text" placeholder="ENTER YOUR NAME*" required />
+              <input type="email" placeholder="ENTER YOUR EMAIL*" required />
+              <input type="text" placeholder="PHONE NUMBER" />
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="YOUR MESSAGE*"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn--outline-black">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__contact">
+          <h4 class="footer__contact__title">Stay in touch</h4>
+          <div class="footer__contact__wrapper">
+            <a href="tel:+3810692507940" class="footer__contact__link">
+              <img src="./assets/icons/phone-fill.svg" alt="icon" />
+              <span>+381-069-2507940</span>
+            </a>
+            <a
+              href="mailto:stasa.veselinovic.83.22@ict.edu.rs"
+              class="footer__contact__link"
+            >
+              <img src="./assets/icons/mail-fill.svg" alt="icon" />
+              <span>stasa.veselinovic.83.22@ict.edu.rs</span>
+            </a>
+            <a
+              href=" http://maps.google.com/?q=Kneza Milosa 13, Belgrade, Serbia"
+              class="footer__contact__link"
+            >
+              <img src="./assets/icons/map-fill.svg" alt="icon" />
+              <span>Kneza Milosa 13, Belgrade, Serbia</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__devider"></div>
+      <div class="container">
+        <p class="footer__text">
+          ©Copyright All Right Reserved by Stasa Veselinovic 2023
+          <a href="./sass/main.css">Ne-minifikovan CSS</a>
+        </p>
+
+      </div>
+    </footer>
+  </body>
+</html>

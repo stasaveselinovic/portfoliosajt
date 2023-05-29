@@ -1,0 +1,32 @@
+// Mobile menu
+.menu-input {
+  display: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -2;
+  opacity: 0;
+  @include mobile {
+    display: block;
+    &:checked ~ .nav {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Labels
+.mobile-menu {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+.mobile-close {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}

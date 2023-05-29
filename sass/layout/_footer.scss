@@ -1,0 +1,53 @@
+.footer {
+  padding: 40px 0;
+  background-color: $dark;
+  &__contact {
+    &__wrapper {
+      @include flexcenter;
+      gap: 40px;
+      flex-wrap: wrap;
+      @include tablet {
+        flex-direction: column;
+        gap: 30px;
+        max-width: 300px;
+        margin: 0 auto;
+        align-items: flex-start;
+      }
+    }
+    &__title {
+      @include title;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      color: $white;
+      margin-bottom: 30px;
+    }
+    &__link {
+      @include text;
+      font-size: 16px;
+      color: $gray;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      img {
+        height: 24px;
+        width: 24px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__devider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba($color: $gray, $alpha: 0.3);
+    margin: 40px 0;
+  }
+  &__text {
+    @include text;
+    color: $gray;
+    text-align: center;
+  }
+}

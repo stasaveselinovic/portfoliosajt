@@ -1,0 +1,38 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.container-large {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 20px;
+  @include tablet {
+    padding: 0 10px;
+  }
+}
+
+// section title
+.section-title {
+  font-size: 24px;
+  line-height: 1.38;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  &--about {
+    color: $white;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  &--outline {
+    color: black;
+    border: 2px solid $black;
+    padding: 12px 30px;
+    font-weight: 600;
+  }
+}
